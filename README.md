@@ -3,4 +3,4 @@
 2. cd site
 3. bower i
 4. npm i
-5.gulp (to start browser-sync)
+5. gulp (to start browser-sync)
