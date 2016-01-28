@@ -1,3 +1,152 @@
 html, body {
 	height: 100%;
 }
+
+body {
+	background: no-repeat top left fixed #f6e190 url('../images/bg_main.jpg');
+	background-size: cover;
+}
+
+.clearfix:before, .clearfix:after {
+	content: '';
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+}
+
+
+.wrapper:after {
+	content: '';
+	width: 100%;
+	clear: both;
+	height: 73px;
+	display: table;
+}
+
+/* header */
+.header {
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-bottom: solid 7px #fff;
+	width: 100%;
+	height: 90px;
+	background-color: #727070;
+	box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
+}
+
+.header_content {
+	margin: 0 auto;
+	padding: 0;
+	width: 1200px;
+	height: 100%;
+}
+
+.logo_link {
+	margin: 10px 0 0 9px;
+	padding: 0;
+	display: block;
+	border: none;
+	text-decoration: none;
+	width: 95px;
+	height: 71px;
+	float: left;
+	overflow: hidden;
+}
+
+.logo_image {
+	width: 100%;
+}
+
+.social {
+	margin: 27px 0 0 0;
+	padding: 0;
+	display: block;
+	float: right;
+}
+
+.social_item {
+	margin: 0 0 0 15px;
+	padding: 0;
+	display: block;
+	list-style: none;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background: #fff;
+	background-image: -webkit-linear-gradient(left, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	background-image: -o-linear-gradient(left, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	background-image: linear-gradient(to right, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.31),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+	float: left;
+	box-shadow: 0 2px 1px 0 rgba(0,0,0,0.31);
+	overflow: hidden;
+}
+
+.social_link {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url('../images/social_sprites.png');
+	text-indent: -99999px;
+}
+
+.social_link.fb {
+    background-position: -51px -5px;
+}
+
+.social_link.fb:hover {
+    background-position: -5px -5px;
+}
+
+
+.social_link.gh {
+    background-position: -143px -5px;
+}
+
+.social_link.gh:hover {
+    background-position: -97px -5px;
+}
+
+
+.social_link.tw {
+    background-position: -235px -5px;
+}
+
+.social_link.tw:hover {
+    background-position: -189px -5px;
+}
+
+
+.social_link.vk {
+    background-position: -327px -5px;
+}
+
+.social_link.vk:hover {
+    background-position: -281px -5px;
+}
+
+/* footer */
+.footer {
+	margin: -63px 0 0 0;
+	padding: 0;
+	width: 100%;
+	height: 63px;
+	background-color: #fff; 
+	background-image: -moz-linear-gradient( 90deg, rgba(0,0,0,0.06) 0%, rgba(255,255,255,0.06) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgba(0,0,0,0.06) 0%, rgba(255,255,255,0.06) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(0,0,0,0.06) 0%, rgb(255,255,255,0.06) 100%);
+	box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
+}
