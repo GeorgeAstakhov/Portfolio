@@ -32,6 +32,7 @@
 	<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">
 
 	<!-- css fonts -->
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 
 	<!-- css main -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -66,39 +67,44 @@
 		</header>
 		<div class="content clearfix">
 			<aside class="side_content">
-				<nav class="main_nav">
+				<nav class="main_nav clearfix">
 					<ul class="main_nav_menu">
-						<li class="main_nav_item"><a href="" class="main_nav_link">Обо мне</a></li>
+						<li class="main_nav_item"><a href="" class="main_nav_link active">Обо мне</a></li>
 						<li class="main_nav_item"><a href="" class="main_nav_link">Мои работы</a></li>
 						<li class="main_nav_item"><a href="" class="main_nav_link">Обратная связь</a></li>
 					</ul>
 				</nav>
-				<nav class="contacts">
-					<h3 class="contacts_header">Контакты</h3>
+				<nav class="contacts clearfix">
 					<ul class="contacts_menu">
-						<li class="contacts_item"><a href="" class="contacts_link">george75@list.ru</a></li>
-						<li class="contacts_item"><a href="" class="contacts_link">+79529592009</a></li>
-						<li class="contacts_item"><a href="" class="contacts_link">george_astakhov</a></li>
+						<li class="contacts_item"><p class="contacts_header">Контакты</p></li>
+						<li class="contacts_item"><a href="" class="contacts_link mail">george75@list.ru</a></li>
+						<li class="contacts_item"><a href="" class="contacts_link phone">+79529592009</a></li>
+						<li class="contacts_item"><a href="" class="contacts_link skype">george_astakhov</a></li>
 					</ul>
 				</nav>
-				<main class="main_content">
-					<section class="main_content_item">
-						<h2 class="content_item_header"></h2>
-						<div class="content_item_inside"></div>
-					</section>
-					<section class="main_content_item">
-						<h2 class="content_item_header"></h2>
-						<div class="content_item_inside"></div>
-					</section>
-					<section class="main_content_item">
-						<h2 class="content_item_header"></h2>
-						<div class="content_item_inside"></div>
-					</section>
-				</main>
 			</aside>
+			<main class="main_content clearfix">
+				<section class="main_content_item clearfix">
+					<h2 class="content_item_header">Основная информация</h2>
+					<div class="content_item_inside"></div>
+				</section>
+				<section class="main_content_item clearfix">
+					<h2 class="content_item_header">Опыт работы</h2>
+					<div class="content_item_inside"></div>
+				</section>
+				<section class="main_content_item clearfix">
+					<h2 class="content_item_header">Образование</h2>
+					<div class="content_item_inside"></div>
+				</section>
+			</main>			
 		</div>
 	</article>
-	<footer class="footer"></footer>
+	<footer class="footer">
+		<div class="footer_content">
+			<a href="" class="signin">Вход</a>
+			<p class="copyright">&copy; 2015. Это мой сайт. пожалуйста не копируйте и не воруйте его!</p>
+		</div>
+	</footer>
 	<script src="bower/jquery/dist/jquery.min.js"></script>
 	<script src="js/main.js"></script>	
 </body>
