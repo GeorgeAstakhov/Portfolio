@@ -3,6 +3,6 @@
   "dependencies": {
     "jquery": "^1.8.1",
     "normalize-css": "normalize.css#^3.0.3",
-    "modernizr": "^3.3.1"
+    "modernizr": "2.8.3"
   }
 }

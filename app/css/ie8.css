@@ -1,0 +1,9 @@
+body {
+	background-color: #f7e39a;
+	background-image: none;
+}
+
+.wrapper_hover_works {
+	background-color: #333;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
