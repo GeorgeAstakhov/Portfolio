@@ -86,9 +86,33 @@
 			<main class="main_content clearfix">
 				<section class="main_content_item clearfix">
 					<h2 class="content_item_header">У вас интересный проект? Напишите мне</h2>
-					<div class="content_item_inside clearfix">
-						
-					</div>
+					<form action="" class="feedback_form clearfix">
+						<div class="form_halfelement left">
+							<label class="label name" for="name">Имя</label>
+							<input type="text" class="text_halfelement" name="login" id="name" placeholder="Как к Вам обращаться?" autofocus>
+						</div>
+						<div class="form_halfelement right">
+							<label class="label email" for="email">Email</label>
+							<input type="text"  class="text_halfelement" name="email" id="email" placeholder="Куда мне писать">
+						</div>
+						<div class="form_fullelement">
+							<label class="label message" for="message">Сообщение</label>
+							<textarea class="message_fullelement" name="message" id="message" placeholder="Кратко, в чем суть" cols="30" rows="10"></textarea>
+						</div>
+						<p class="label_captcha">Введите код, указанный на картинке</p>
+						<div class="form_halfelement left">
+							<div class="captcha_container">
+								<img src="images/captcha.png" alt="captcha" class="captcha_image">
+							</div>
+						</div>
+						<div class="form_halfelement right">
+							<input type="text"  class="text_captcha" name="captcha" id="captcha" placeholder="Введите код">
+						</div>
+						<div class="form_fullelement buttons">
+							<input type="submit" value="Отправить" class="button submit">
+							<input type="reset" value="Очистить" class="button reset">
+						</div>
+					</form>
 				</section>
 			</main>			
 		</div>
