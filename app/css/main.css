@@ -39,6 +39,8 @@ body {
 	width: 100%;
 	height: 90px;
 	background-color: #727070;
+	-webkit-box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
 	box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
 }
 
@@ -79,14 +81,17 @@ body {
 	list-style: none;
 	width: 36px;
 	height: 36px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
 	border-radius: 50%;
 	background: #fff;
 	background-image: -webkit-linear-gradient(left, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
 	background-image: -o-linear-gradient(left, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
 	background-image: linear-gradient(to right, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	-webkit-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.31),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+	-moz-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.31),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
 	box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.31),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
 	float: left;
-	box-shadow: 0 2px 1px 0 rgba(0,0,0,0.31);
 	overflow: hidden;
 }
 
@@ -187,9 +192,12 @@ body {
 	font-size: 20px;
 	line-height: 1.2;
 	background-color: #faf9f9;
+	background-image: -ms-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
 	background-image: -moz-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
-	background-image: -ms-linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	background-image: linear-gradient( 90deg, rgb(233,230,229) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	-webkit-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+	-moz-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
 	box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
 	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);	
 	box-sizing: border-box;
@@ -197,11 +205,15 @@ body {
 }
 
 .main_nav_item:first-child .main_nav_link {
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
 	border-radius: 5px 5px 0 0;
 	border-bottom: none;
 }
 
 .main_nav_item:last-child .main_nav_link {
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
 	border-radius: 0 0 5px 5px;
 	border-top: none;
 }
@@ -211,6 +223,9 @@ body {
 	background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+	background-image: linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+	-webkit-box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+	-moz-box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
 	box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
 
 }
@@ -220,6 +235,9 @@ body {
 	background-image: -moz-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+	background-image: linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+	-webkit-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+	-moz-box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
 	box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
 }
 
@@ -232,6 +250,7 @@ body {
 	background-image: -moz-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
 	background-image: -ms-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
+	background-image: linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
 	box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.17),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.25);
 	border-radius: 5px 5px 0 0;
 	color: #d0982c;
@@ -252,6 +271,7 @@ body {
 	background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+	background-image: linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
 	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
 	text-decoration: none;
 	color: #727070;
@@ -269,6 +289,7 @@ body {
 	background-image: -moz-linear-gradient( 90deg, rgb(224,197,145) 0%, rgba(251,249,249,0) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(224,197,145) 0%, rgba(251,249,249,0) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(224,197,145) 0%, rgba(251,249,249,0) 100%);
+	background-image: linear-gradient( 90deg, rgb(224,197,145) 0%, rgba(251,249,249,0) 100%);
 	box-shadow: inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
 	text-decoration: underline;
 } 
@@ -337,6 +358,7 @@ body {
 	background-image: -moz-linear-gradient( 90deg, rgba(0,0,0,0.05) 0%, rgba(255,255,255,0.05) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgba(0,0,0,0.05) 0%, rgba(255,255,255,0.05) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgba(0,0,0,0.05) 0%, rgba(255,255,255,0.05) 100%);
+	background-image: linear-gradient( 90deg, rgba(0,0,0,0.05) 0%, rgba(255,255,255,0.05) 100%);
 	box-shadow: 0px 5px 10px 0px rgba(236, 232, 227, 0.75),inset 0px 6px 6px 0px rgba(255, 255, 255, 0.004);
 }
 
@@ -348,6 +370,7 @@ body {
 	background-image: -moz-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
+	background-image: linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
 	box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
 	color: #eeedec;
 	font-family: "OpenSansSemiBold";
@@ -660,6 +683,7 @@ body {
 	background-image: -moz-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	background-image: linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
 	box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
 }
 
@@ -668,6 +692,7 @@ body {
 	background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+	background-image: linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
 	box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
 }
 
@@ -741,6 +766,7 @@ body {
 	background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+	background-image: linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
 	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);	
 	color: #727070;
 	font-size: 12px;
@@ -776,6 +802,7 @@ body {
 	background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+	background-image: linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
 	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
 	color: #727070;
 	font-size: 12px;
@@ -803,6 +830,7 @@ body {
 	background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+	background-image: linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
 	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35);	
 	overflow: hidden;
 }
@@ -826,6 +854,7 @@ body {
 	background-image: -moz-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	background-image: linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
 	box-shadow: 0px 1px 1px 0 rgba(9, 9, 9, 0.4);	
 	color: #727070;
 	font-family: 'OpenSansSemiBold';
@@ -841,12 +870,14 @@ body {
 	background-image: -moz-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
+	background-image: linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
 }
 
 .button.submit:hover {
 	background-image: -moz-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
+	background-image: linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
 }
 
 .button.reset {
@@ -854,6 +885,7 @@ body {
 	background-image: -moz-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+	background-image: linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
 	color: #727070;
 }
 
@@ -861,6 +893,7 @@ body {
 	background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+	background-image: linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
 }
 
 ::-webkit-input-placeholder{color:#c7c6c6;}
@@ -878,6 +911,7 @@ body {
 	background-image: -moz-linear-gradient( 90deg, rgba(0,0,0,0.06) 0%, rgba(255,255,255,0.06) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgba(0,0,0,0.06) 0%, rgba(255,255,255,0.06) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(0,0,0,0.06) 0%, rgb(255,255,255,0.06) 100%);
+	background-image: linear-gradient( 90deg, rgb(0,0,0,0.06) 0%, rgb(255,255,255,0.06) 100%);
 	box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
