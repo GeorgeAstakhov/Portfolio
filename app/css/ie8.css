@@ -7,3 +7,28 @@ body {
 	background-color: #333;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
+
+.main_nav_link {
+	background-color: #faf9f9;
+}
+
+.main_nav_link:hover {
+	background-color: #bfbfbf;
+}
+
+.main_nav_link.active, .main_nav_link.active:hover {
+	background-color: #7ce7cd;
+}
+
+.contacts_header {
+	background-color: #f4cc7e;
+}
+
+.contacts_link {
+	background-color: #fbfbfb;
+}
+
+.contacts_link:hover {
+	background-color: #e9dcc1;
+}
+
