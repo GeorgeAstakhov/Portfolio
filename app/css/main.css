@@ -949,7 +949,7 @@ body {
 .add_project_wrapper {
 	margin: 0;
 	padding: 0;
-	display: block;
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -962,7 +962,7 @@ body {
 .add_project {
 	margin: -245px 0 0 -181px;
 	padding: 0;
-	display: block;
+	display: none;
 	width: 362px;
 	height: 490px;
 	position: fixed;
