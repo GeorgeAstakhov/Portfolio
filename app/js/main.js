@@ -11,12 +11,15 @@ var mainModule = (function(){
 		$(document).on('keyup', _hideKeyAddProject); // скрываем модальное по нажатию на  escape
 		$('#project_file').on('change', _getAddFileName); // добавляем имя файла в стилизованный input[file]
 		$('form').on('submit',_formCheck);
+		$('form').on('reset',_formReset);
+		$('.add_project_error_message').on('click',_formReset);
 	}
 
 
 	//показываем модальное окно добавления проекта
 	var _showAddProject = function(event) {
 		event.preventDefault();
+		_formReset();
 		$('.add_project_wrapper').fadeIn(100,function(){
 			$('.add_project').show()
 			.animate({
@@ -53,17 +56,23 @@ var mainModule = (function(){
 
 	var _dataValidate = function(){
 		var form = $('form');
+		var inputError = false;
+		
 		var inputData = form.find('input, textarea').not('input[type="file"], input[type="hidden"]');
 		inputData.each(function(index, element) {
+
 			var currentElement = $(element).val();
+			
+
 			if (!currentElement) {
-				$(element).qtip({
+				inputError = true;
+				$(element).addClass('input-error').qtip({
 					content: {
 						attr: 'qtip-content'
 					},
 					position: {
-						my: 'right center',
-						at: 'left center',
+						my: $(element).attr('my'),
+						at: $(element).attr('at'),
 						target: $(element)
 					},
 					show: {
@@ -73,17 +82,30 @@ var mainModule = (function(){
 						event: 'unfocus'
 					},
 					style: {
-						classes: 'qtip_custom'
+						classes: 'qtip-custom'
 					}
 				}).trigger('show');
 			}
 		});
+
+		if (inputError) {
+			form.find('.add_project_error_message').show();
+		}
 	}
 
 	//запускаем проверку валидации формы при нажатии кнопки submit
 	var _formCheck = function(event){
 		event.preventDefault();
 		_dataValidate();
+	}
+
+	var _formReset = function() {
+		var form = $('form');
+		$('.add_project_error_message').hide();
+		var inputData = form.find('input, textarea').not('input[type="file"], input[type="hidden"]');
+		inputData.each(function(index, element) {
+			$(element).removeClass('input-error').val('').qtip("destroy", true);
+		});
 	}
 
 	//возврат публичных методов объекта
