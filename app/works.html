@@ -30,6 +30,7 @@
 
 	<!-- css vendors -->
 	<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="bower/qtip2/jquery.qtip.css">
 
 	<!-- css fonts -->
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
@@ -142,14 +143,16 @@
 				<img class="add_project_close_image" src="images/add_project_close.png" alt="Закрыть">
 			</div>
 			<label class="add_project_label" for="project_name">Название проекта</label>
-			<input type="text" class="add_project_text" name="project_name" id="project_name" placeholder="Введите название">
+			<input type="text" class="add_project_text" name="project_name" id="project_name" placeholder="Введите название" qtip-content="введите название">
 			<p class="add_project_label">Картинка проекта</p>
-			<label for="project_file" class="add_project_file_label">Загрузите изображение</label>
+			<label for="project_file" class="add_project_file_label">
+				<input type="text" class="add_project_file_text" placeholder="Загрузите изображение" readonly qtip-content="изображение">
+			</label>
 			<input type="file" name="project_file" id="project_file" class="add_project_file">
 			<label class="add_project_label" for="project_url">URL проекта</label>
-			<input type="text" class="add_project_text" name="project_url" id="project_url" placeholder="Добавьте ссылку">
+			<input type="text" class="add_project_text" name="project_url" id="project_url" placeholder="Добавьте ссылку" qtip-content="ссылка на проект">
 			<label class="add_project_label" for="project_messsage">Описание</label>
-			<textarea class="add_project_message" rows="5" cols="40" name="project_message" id="project_messsage" placeholder="Пара слов о Вашем проекте"></textarea>
+			<textarea class="add_project_message" rows="5" cols="40" name="project_message" id="project_messsage" placeholder="Пара слов о Вашем проекте" qtip-content="описание проекта"></textarea>
 			<button class="add_project_button" type="submit">Добавить</button>
 		</fotm>
 	</div>
@@ -160,6 +163,7 @@
 		</div>
 	</footer>
 	<script src="bower/jquery/dist/jquery.min.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
 	<script src="js/main.js"></script>	
 </body>
 </html>

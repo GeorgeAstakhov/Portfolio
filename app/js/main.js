@@ -9,7 +9,8 @@ var mainModule = (function(){
 		$('.add_works').on('click', _showAddProject); // показываем модального окна
 		$('.add_project_wrapper, .add_project_close').on('click', _hideAddProject); //скрываем модальное окно по клику на оверлей или по иконке закрыть
 		$(document).on('keyup', _hideKeyAddProject); // скрываем модальное по нажатию на  escape
-		$('#project_file').on('change', _getAddFileName) // добавляем имя файла в стилизованный input[file]
+		$('#project_file').on('change', _getAddFileName); // добавляем имя файла в стилизованный input[file]
+		$('form').on('submit',_formCheck);
 	}
 
 
@@ -47,7 +48,42 @@ var mainModule = (function(){
 	// добавляем имя файла в стилизованный input[file]
 	var _getAddFileName = function() {
 		var addFileName = $(this).val().replace(/.+[\\\/]/, "");
-		$('.add_project_file_label').text(addFileName);
+		$('.add_project_file_text').val(addFileName);
+	}
+
+	var _dataValidate = function(){
+		var form = $('form');
+		var inputData = form.find('input, textarea').not('input[type="file"], input[type="hidden"]');
+		inputData.each(function(index, element) {
+			var currentElement = $(element).val();
+			if (!currentElement) {
+				$(element).qtip({
+					content: {
+						attr: 'qtip-content'
+					},
+					position: {
+						my: 'right center',
+						at: 'left center',
+						target: $(element)
+					},
+					show: {
+						event: 'show'
+					},
+					hide: {
+						event: 'unfocus'
+					},
+					style: {
+						classes: 'qtip_custom'
+					}
+				}).trigger('show');
+			}
+		});
+	}
+
+	//запускаем проверку валидации формы при нажатии кнопки submit
+	var _formCheck = function(event){
+		event.preventDefault();
+		_dataValidate();
 	}
 
 	//возврат публичных методов объекта
