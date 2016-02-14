@@ -13,6 +13,7 @@ var mainModule = (function(){
 		$('form').on('submit',_formCheck);
 		$('form').on('reset',_formReset);
 		$('.add_project_error_message').on('click',_formReset);
+		$('input[type="text"], textarea').on('focus',_formReset);
 	}
 
 
